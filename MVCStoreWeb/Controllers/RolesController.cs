@@ -7,6 +7,7 @@ using System.Text.RegularExpressions;
 
 namespace MVCStoreWeb.Controllers
 {
+    [Authorize(Roles ="admin")]
     public class RolesController : Controller
     {
         RoleManager<IdentityRole> _roleManager;
